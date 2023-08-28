@@ -18,12 +18,25 @@
         <section class="bg-gray-100 mx-auto mt-8">
             <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
             <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+
+            <!--Another search field-->
+            <input id="search-field-2" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+
+            <button onclick="handleSearch2()" class="btn btn-primary">Search</button>
         </section>
+        <!--Spinner loader-->
         <!---->
         <section>
+            <div id="loading-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-5">
                 
 
+            </div>
+            <!--Showall-->
+            <div id="show-all-container" class="hidden">
+                <button class="btn btn-accent">ShowAll</button>
             </div>
         </section>
 
